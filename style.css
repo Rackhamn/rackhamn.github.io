@@ -14,18 +14,23 @@ body {
   padding: 1rem;
 }
 
-/* Navbar styling */
+/* Make navbar items and translate dropdown aligned */
 .navbar {
   display: flex;
-  justify-content: center;       /* Center links */
-  gap: 2rem;                     /* Space between links */
-  background-color: #f2f2f2;     /* Light background */
+  justify-content: space-between; /* push the translate element to the right */
+  align-items: center;
+  gap: 1rem;
+  background-color: #f2f2f2;
   padding: 0.8rem 1rem;
   border-bottom: 2px solid #d1d1d1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  position: sticky;              /* Sticks to top on scroll */
+  position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+#google_translate_element {
+  display: inline-block;
 }
 
 .navbar a {
@@ -139,4 +144,3 @@ p {
   color: #fff;
   cursor: pointer;
 }
-
