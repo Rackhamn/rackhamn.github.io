@@ -17,7 +17,8 @@
       <a href="https://rackhamn.github.io/zon3.html">Zon 3</a>
     </nav>
   </header>
-
+  <div id="google_translate_element"></div>
+  
   <main>
     <h1>Välkommen till Botanisk Park</h1>
 
@@ -31,6 +32,13 @@
       Botanisk Park sträcker sig över flera hektar och innehåller både inomhus- och utomhusmiljöer. Besökare kan promenera genom tematiska trädgårdar, se sällsynta och exotiska växter och lära sig om växters vatten- och näringsbehov.  
       Vi arbetar aktivt med hållbar bevattning och skötsel för att bevara parkens flora och samtidigt spara resurser.
     </p>
+
+  <div class="thumb">
+    <a href="https://rackhamn.github.io/projekt_skola_botanisk_trädgård.png" class="lightbox-link">
+      <img src="https://rackhamn.github.io/projekt_skola_botanisk_trädgård.png" alt="Karta över parken">
+    </a>
+    <div>Karta över parken</div>
+  </div>
 
     <h2>Utforska våra zoner</h2>
     <p>Parken är indelad i tre huvudzoner, var och en med unika växter och tematiska trädgårdar:</p>
@@ -52,6 +60,26 @@
     </p>
   </main>
 
+
+  <!-- Lightbox overlay -->
+<div id="lightbox-overlay">
+  <span id="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+  <script src="https://rackhamn.github.io/script.js"></script>
+
+  <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'sv',  // original language of your site
+    // (all langs) // includedLanguages: 'en,sv',  // languages to allow
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
   <footer>
     <p>© 2025 Botanisk Park | Alla rättigheter reserverade</p>
   </footer>
