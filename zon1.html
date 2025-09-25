@@ -87,7 +87,7 @@ function googleTranslateElementInit() {
     const labels = getLastNDaysLabels(30);
 
     // Hardcoded daily water usage for Zon 2
-    const zone1Data = [4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,4,5,4,5,4,4,5];
+    const zone1Data = [4,4,5,4,4,5,3,2,4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,4,5,4,5,4,4,5];
 
     // Create the chart
     const ctx2 = document.getElementById('zone1Graph').getContext('2d');
@@ -98,7 +98,7 @@ function googleTranslateElementInit() {
         datasets: [{
           label: 'Daglig vattenförbrukning (L)',
           data: zone1Data,
-          borderColor: 'green',
+          borderColor: 'blue',
           backgroundColor: 'rgba(0,0,0,0)',
           tension: 0.2,
           fill: false,
