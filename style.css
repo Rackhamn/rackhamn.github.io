@@ -14,25 +14,43 @@ body {
   padding: 1rem;
 }
 
-/* Header Navbar */
+/* Navbar styling */
 .navbar {
   display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #a2a9b1;
+  justify-content: center;       /* Center links */
+  gap: 2rem;                     /* Space between links */
+  background-color: #f2f2f2;     /* Light background */
+  padding: 0.8rem 1rem;
+  border-bottom: 2px solid #d1d1d1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;              /* Sticks to top on scroll */
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #0645ad;
+  color: #0645ad;                /* Wikipedia-blue style */
   font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  background-color: #0645ad;     /* Blue highlight on hover */
+  color: white;
 }
+
+/* Responsive mobile layout */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
 
 h1 {
   font-size: 2rem;
