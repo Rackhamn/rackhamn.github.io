@@ -123,7 +123,7 @@ function googleTranslateElementInit() {
 
     // Show total water used
     const total1 = zone1Data.reduce((sum, val) => sum + val, 0);
-    document.getElementById('zone1Total').textContent = `Total vattenanvändning hittills: ${total1} L`;
+    document.getElementById('zone1Total').textContent = `Total vattenanvändning hittills: ${+value.toFixed(total1)} L`;
   </script>
 
   
