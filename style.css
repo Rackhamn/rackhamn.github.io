@@ -1,5 +1,5 @@
 /* Reset */
-body, h1, h2, p, section {
+body, h1, h2, p, section, header, nav {
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,26 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+/* Header Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0645ad;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -58,4 +78,15 @@ p {
 }
 
 /* Mobile adjustments */
-@media (max-width: 600
+@media (max-width: 600px) {
+  .thumb {
+    float: none;
+    margin: 0 auto 1rem auto;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
