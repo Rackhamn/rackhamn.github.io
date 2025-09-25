@@ -48,7 +48,7 @@
 
   <div class="clearfix"></div>
 
-  <h2>Zon 1 – Rose, vattenförbrukning (senaste månaden)</h2>
+  <h2>Zon 1, vattenförbrukning (senaste månaden)</h2>
   <canvas id="zone1Graph" width="600" height="300"></canvas>
   <p id="zone1Total"></p>
 
@@ -87,7 +87,7 @@ function googleTranslateElementInit() {
     const labels = getLastNDaysLabels(30);
 
     // Hardcoded daily water usage for Zon 2
-    const zone2Data = [4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,4,5,4,5,4,4,5];
+    const zone1Data = [4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,5,4,4,5,4,4,5,4,4,5,4,5,4,4,5];
 
     // Create the chart
     const ctx2 = document.getElementById('zone1Graph').getContext('2d');
@@ -120,7 +120,7 @@ function googleTranslateElementInit() {
     });
 
     // Show total water used
-    const total1 = zone2Data.reduce((sum, val) => sum + val, 0);
+    const total1 = zone1Data.reduce((sum, val) => sum + val, 0);
     document.getElementById('zone1Total').textContent = `Total vattenanvändning hittills: ${total1} L`;
   </script>
 
