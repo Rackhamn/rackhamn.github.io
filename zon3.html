@@ -126,8 +126,8 @@ function googleTranslateElementInit() {
     });
 
     // Show total water used
-    const total1 = zone3Data.reduce((sum, val) => sum + val, 0);
-    document.getElementById('zone3Total').textContent = `Total vattenanvändning hittills: ${total1} L`;
+    const total3 = zone3Data.reduce((sum, val) => sum + val, 0);
+    document.getElementById('zone3Total').textContent = `Total vattenanvändning hittills: ${+total3.toFixed(2)} L`;
   </script>
 
   <footer>
