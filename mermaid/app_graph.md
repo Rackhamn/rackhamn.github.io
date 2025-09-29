@@ -1,4 +1,4 @@
-´´´mermaid
+```mermaid
 flowchart LR
     subgraph Local_System[Local System]
         app[Local Application]
@@ -30,4 +30,4 @@ flowchart LR
     mhc -. CANbus .- cb
     sensors -. CANbus .- mhc
     valve -. CANbus .- mhc
-´´´
+```
