@@ -17,7 +17,7 @@ flowchart TD
     end
 
     %% Connections
-    Local_System <-> External_System
+    Local_System <--> External_System
     app <--> db
 
     app <--> mhc
