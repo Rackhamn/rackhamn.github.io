@@ -1,5 +1,5 @@
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph Local_System[Local System]
         app[Local Application]
         db[Local Database]
