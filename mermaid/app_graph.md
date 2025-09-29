@@ -17,9 +17,8 @@ flowchart TD
     end
 
     %% Connections
+    Local_System <-> External_System
     app <--> db
-    db --> extdb
-    app --> extdb
 
     app <--> mhc
     mhc <--> cb
