@@ -9,7 +9,7 @@ flowchart TD
         extdb[External Database / Server]
     end
 
-    subgraph Hardware[Main Hardware Controller + Control Network]
+    subgraph Hardware[Park Grounds]
         mhc[Main Hardware Controller]
         cb[Control Boxes]
         valve[Valve On/Off]
