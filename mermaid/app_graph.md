@@ -3,15 +3,15 @@ flowchart TD
     subgraph Local_System[Local System]
         app[Local Application]
         db[Local Database]
+        mhc[Main Hardware Controller]
     end
 
     subgraph External_System[External System]
         extdb[External Database / Server]
     end
 
-    subgraph Hardware[Park Grounds]
-        mhc[Main Hardware Controller]
-        cb[Control Boxes]
+    subgraph Hardware[Hardware Controller]
+        cb[Controller]
         valve[Valve On/Off]
         sensors[Sensors + Data]
     end
@@ -19,10 +19,8 @@ flowchart TD
     %% Connections
     Local_System <--> External_System
     app <--> db
-
-    app <--> mhc
-    mhc <--> cb
-    cb --> valve
+    app <--> cb
+    
     sensors --> cb
 
     %% Notes
